@@ -1,12 +1,17 @@
-import { createStore } from 'vuex'
+import {
+	createStore
+} from 'vuex'
 
 export default createStore({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
-  }
+	state: {
+		// 主页选中的tab索引
+		mainTabBarActive: 0,
+	},
+	mutations: {
+		updateMainTabBarActive(state, active) {
+			state.mainTabBarActive = active;
+		}
+	},
+	actions: {},
+	modules: {}
 })
